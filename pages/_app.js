@@ -3,7 +3,7 @@
 
 function MyApp({ Component, pageProps }) {
   return 
- <Provider client={{ ceramic: "testnet-clay" }}>
+ <Provider client={{ ceramic: "testnet-clay" }} contextSharing={true}>
       <Component {...pageProps} />;
     </Provider>
 
