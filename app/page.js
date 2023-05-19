@@ -68,7 +68,7 @@ useEffect(() => {
       disableInjectedProvider: false,
     });
   }
-}, [connection.status]);
+}, [connection.status]); 
 
 const connectToSelfID = async () => {
   const ethereumAuthProvider = await getEthereumAuthProvider();
