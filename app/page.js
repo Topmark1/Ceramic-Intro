@@ -1,4 +1,4 @@
-"use client"
+
 
 import styles from "../styles/globals.css";
 import { Web3Provider } from "@ethersproject/providers";
