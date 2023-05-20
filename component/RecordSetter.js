@@ -2,7 +2,7 @@ import {useState} from "react"
 import { useViewerRecord } from "@self.id/react";
 import { QueryClient, QueryClientProvider } from 'react-query'
 
- function RecordSetter() {
+ function RecordSetter1() {
   const [name, setName] = useState("");
   const record = useViewerRecord("basicProfile");
 
@@ -44,10 +44,8 @@ return (
 }
 const queryClient = new QueryClient();
 
-export default {
-  decorators: [
-    (Story) => (
-      <QueryClientProvider client={queryClient}>{RecordSetter()}</QueryClientProvider>
+export default function RecordSetter(){
+ return(
+      <QueryClientProvider client={queryClient}><RecordSetter1/></QueryClientProvider>
     )
-  ],
 };
